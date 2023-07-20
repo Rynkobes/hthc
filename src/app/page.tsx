@@ -1,25 +1,17 @@
 'use client'
 
-import Image from 'next/image'
-import { Box, Text } from '@chakra-ui/react'
-import styles from './page.module.css'
+import Menu from '@/components/nav'
+import { Grid, Flex } from '@chakra-ui/react'
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Box>
-          <Text>Welcome to Help the Helpless Charity Website</Text>
-        </Box>
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-    </main>
+    <Grid p={5}>
+      <Flex
+        h='100vh'
+      >
+        <Menu />
+      </Flex>
+    </Grid>
   )
 }

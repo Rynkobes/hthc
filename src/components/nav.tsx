@@ -9,13 +9,11 @@ const Menu = () => {
           h='14vh'
           justify='space-between'
           align='start'
-
       >
           <Avatar
               size='xl'
               name='Help the Helpless Charity' />
           <Flex
-              border='1px solid tomato'
               align='center'
           >              
               <NavLink linkText='About' path='#' />

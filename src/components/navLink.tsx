@@ -14,10 +14,11 @@ interface NavLinkProps {
   weight?: string
   fSize?: string
   bRadius?: string
+  children?: React.ReactNode
 }
 
 const NavLink: React.FC<NavLinkProps> = (props) => {
-  const {linkText, fSize, color, path, tAlign, w, bgColor, weight, bRadius } = props
+  const {linkText, fSize, color, path, tAlign, w, bgColor, weight, bRadius, children } = props
   return (
       <Link href={path}
           pl={5}
@@ -30,7 +31,7 @@ const NavLink: React.FC<NavLinkProps> = (props) => {
           p={1}
           w={w}
           textAlign={tAlign ? tAlign : 'left' }
-    >{ linkText }</Link>
+    >{ linkText } {children} </Link>
   )
 }
 

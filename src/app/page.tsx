@@ -13,7 +13,6 @@ export default function Home() {
       <Flex
         h='100vh'
       >
-        <Menu />
       </Flex>
     </Grid>
   )

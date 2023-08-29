@@ -1,14 +1,16 @@
-import React from 'react'
-import { Flex, Avatar, Link } from '@chakra-ui/react'
+'use client'
+
+import { Flex, Avatar } from '@chakra-ui/react'
 import NavLink from './navLink'
+import DropdownNav from './dropdownNav'
 
 const Menu = () => {
   return (
       <Flex
           w='100%'
-          h='14vh'
           justify='space-between'
-          align='start'
+          p={'0 20px'}
+          bgColor='#FAFAFA'
       >
           <Avatar
               size='xl'
@@ -18,7 +20,8 @@ const Menu = () => {
           >              
               <NavLink linkText='About' path='#' />
               <NavLink linkText='Ways to help' path='#' />
-              <NavLink linkText='Our Work' path='#' />
+              {/* <NavLink linkText='Our Work' path='#' /> */}
+              <DropdownNav />
               <NavLink linkText='Information & Support' path='#' />
               <NavLink 
                   path='#'
